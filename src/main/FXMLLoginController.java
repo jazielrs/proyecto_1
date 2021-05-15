@@ -5,14 +5,19 @@
  */
 package main;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 
 /**
  * FXML Controller class
@@ -22,19 +27,10 @@ import javafx.scene.layout.AnchorPane;
 public class FXMLLoginController implements Initializable {
 
     @FXML
-    private AnchorPane fondo;
+    private Button loginBtn;
+    private AnchorPane at;
     @FXML
-    private AnchorPane fondoB;
-    @FXML
-    private TextField fieldUserName;
-    @FXML
-    private TextField fieldPass;
-    @FXML
-    private Button Login;
-    @FXML
-    private Button Cancel;
-    @FXML
-    private ImageView imageView;
+    private BorderPane bp;
 
     /**
      * Initializes the controller class.
@@ -43,5 +39,20 @@ public class FXMLLoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    private void loadPage(String page){
+        Parent root = null;       
+        try {
+            root = FXMLLoader.load(getClass().getResource(page+".fxml"));
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLLoginController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        this.bp.setCenter(root);
+    }
+
+    @FXML
+    private void loginBtn(ActionEvent event) {
+         loadPage("FXMLMENU");
+    }
+
     
 }

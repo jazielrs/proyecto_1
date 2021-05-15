@@ -25,7 +25,7 @@ public class NewFXMain extends Application {
     public void start(Stage primaryStage) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("FXMLMENU.fxml"));//Selecciona que quiero mostrar
+            root = FXMLLoader.load(getClass().getResource("FXMLLogin.fxml"));//Selecciona que quiero mostrar
             
             Scene scene = new Scene(root);//Crea una pantalla con el root
             primaryStage.setTitle("Proyect No. 1");

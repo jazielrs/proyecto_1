@@ -28,7 +28,7 @@ public class NewFXMain extends Application {
             root = FXMLLoader.load(getClass().getResource("FXMLMENU.fxml"));//Selecciona que quiero mostrar
             
             Scene scene = new Scene(root);//Crea una pantalla con el root
-            primaryStage.setTitle("Laboratorio N°6");
+            primaryStage.setTitle("Proyect No. 1");
             primaryStage.setScene(scene);
             primaryStage.setResizable(false);
             primaryStage.show();

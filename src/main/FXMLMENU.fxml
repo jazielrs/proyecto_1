@@ -1,11 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Page1Controller">
-    
-</AnchorPane>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="32.0" prefWidth="666.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="29.0" prefWidth="666.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Careers">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Add" />
+                        <MenuItem mnemonicParsing="false" text="Modify" />
+                        <MenuItem mnemonicParsing="false" text="Erase" />
+                        <MenuItem mnemonicParsing="false" text="Show" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Students">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Add" />
+                        <MenuItem mnemonicParsing="false" text="Modify" />
+                        <MenuItem mnemonicParsing="false" text="Erase" />
+                        <MenuItem mnemonicParsing="false" text="Show" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Courses">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Add" />
+                        <MenuItem mnemonicParsing="false" text="Modify" />
+                        <MenuItem mnemonicParsing="false" text="Erase" />
+                        <MenuItem mnemonicParsing="false" text="Show" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Schedules">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Show schudule options" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Enrollment">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Make enrollment" />
+                        <MenuItem mnemonicParsing="false" text="Remove courses" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Reports">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Enrollment report (PDF)" />
+                        <MenuItem mnemonicParsing="false" text="De-enrollment report (PDF)" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
